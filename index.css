@@ -1,0 +1,385 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: hsl(210, 46%, 95%);
+	font-family: 'Manrope', sans-serif;
+}
+
+main {
+	background-color: white;
+	width: 730px;
+	height: 280px;
+
+	border-radius: 10px;
+
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+
+	margin: auto;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#mainImage {
+	width: 285px;
+	height: 280px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+
+}
+
+#infoBox {
+	width: 365px;
+	height: 216px;
+	padding-right: 40px;
+}
+
+
+
+/*-------SUMMARY INFO-------*/
+
+h1 {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 28px;
+	letter-spacing: 0.25px;
+	text-align: left;
+	width: 365px;
+	height: 84 px;
+	color: #48556a;
+}
+
+h2 {
+	width: 365px;
+	height: 60px;
+
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 20px;
+	letter-spacing: 0.12px;
+	text-align: left;
+	color: #6e8098;
+	padding: 16px 0;
+}
+
+
+
+/*-------AUTHOR INFO-------*/
+
+#posterInfo {
+	width: 365px;
+	height: 40px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+	#posterInfo img {
+		width: 40px;
+		height: 40px;
+	}
+
+	#posterData {
+		width: 116px;
+		text-align: left;
+		padding-right: 161px;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+
+		#posterName {
+			font-weight: 700;
+			font-size: 13px;
+			line-height: 20px;
+			letter-spacing: 0.12px;
+			color: #48556a;
+		}
+
+		#postDate {
+			font-weight: 400;
+			font-size: 13px;
+			line-height: 20px;
+			letter-spacing: 0.12px;
+			color: #9daec2;
+		}
+
+
+
+/*-------POP UP BUTTON-------*/
+
+#shareBtn {
+	width: 32px;
+	height: 32px;
+	border-radius: 100%;
+	border: none;
+	background-color: #ecf2f8;
+}
+
+	#shareSVG {
+		width: 15px;
+		height: 12.97px;
+		padding: 9.515px 8.5px;
+		color: #6e8098
+	}
+
+	#shareBtn:hover {
+		background-color: #6e8098;
+	}
+
+	#shareSVG:hover {
+		color: #ecf2f8;
+	}
+
+
+
+/*-------POP UP-------*/
+
+#popup {
+	visibility: hidden;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
+	position: absolute;
+	left: 550px;
+	top: 135px;
+}
+
+	#bubble {
+		background-color: #48556a;
+		width: 248px;
+		height: 55px;
+
+		border-radius: 10px;
+
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+		#shareHeader {
+			color: #9daec2;
+			font-weight: 400;
+			font-size: 13px;
+			line-height: 20px;
+			letter-spacing: 5px;
+		}
+
+		#bubble img {
+			width: 20;
+			height: 20;
+		}
+
+	#triangle {
+		width: 0;
+		height: 0;
+
+		border-left: 12px solid transparent;
+		border-right: 12px solid transparent;
+		border-top: 12px solid #48556a;
+	}
+
+
+
+/*-------FOOTER-------*/
+
+footer {
+	width: 200px;
+	padding-bottom: 10px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	font-size: 11px;
+	text-align: center;
+}
+
+	.attribution a {
+		color: hsl(228, 45%, 44%);
+	}
+
+
+
+/*-------MOBILE RESIZE-------*/
+
+
+@media only screen and (max-width: 870px) {
+	main {
+		width: 327px;
+		height: 512px;
+	
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: space-between;
+	}
+
+	#mainImage {
+		width: 327px;
+		height: 200px;
+		padding: 0;
+		margin: 0;
+		border-bottom-left-radius: 0;
+		border-top-right-radius: 10px;
+	}
+	
+	#infoBox {
+		width: 327px;
+		height: 312px;		
+		padding-right: 0px;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+
+
+
+	/*-------SUMMARY INFO-------*/
+
+	h1 {
+		width: 263px;
+		height: 72px;
+
+		padding-top: 15px;
+		padding-bottom: 5px;
+		margin: 0;
+
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: 0.2px;
+	}
+	
+	h2 {
+		width: 263px;
+		height: 100px;
+	
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 20px;
+		letter-spacing: 0.12px;
+		text-align: left;
+		color: #6e8098;
+		padding: 0;
+		margin: 0;
+
+		padding-bottom: 10px;
+	}
+	
+	
+	
+	/*-------AUTHOR INFO-------*/
+	
+	#posterInfo {
+		width: 263px;
+		height: 40px;
+	
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0;
+	}
+
+		#posterInfo img {
+			width: 40px;
+			height: 40px;
+			border: none;
+			border-radius: 100%;
+		}
+
+		#posterData {
+			width: 116px;
+			height: 40px;
+
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+
+			padding-right: 59px
+		}
+
+
+
+	/*-------POP UP BUTTON-------*/
+
+	#shareBtn.clicked {
+		z-index: 1;
+	}
+
+
+
+
+/*-------POP UP-------*/
+
+#popup {
+	visibility: visible;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
+	position: absolute;
+	top: 445px ;
+	left: 0;
+	right: 0;
+
+}
+
+	#bubble {
+		width: 327px;
+		height: 64px;
+
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+		#shareHeader {
+			padding-left: 30px;
+			padding-right: 20px;
+		}
+
+		#bubble img {
+			padding-right: 16px;
+		}
+	
+
+	#triangle {
+		border: none
+	}
+
+	footer {
+		width: 175px;
+	}
+}

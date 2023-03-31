@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Git Hub](https://github.com/MadsenBK/frontendMentor-0004_articlePreviewComponent)
+- Live Site URL: [Netlify](https://strong-fenglisu-c34dbc.netlify.app/)
 
 ## My process
 

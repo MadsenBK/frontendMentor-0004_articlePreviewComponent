@@ -29,9 +29,14 @@ main {
 	align-items: center;
 }
 
-#mainImage {
+#imgWrapper {
 	width: 285px;
 	height: 280px;
+	overflow: hidden;
+}
+#mainImage {
+	height: 100%;
+	width: auto;
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;
 }
